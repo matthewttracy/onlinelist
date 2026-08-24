@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ItemsController {
+
+    List<Item> li = new ArrayList<>();
+
     @GetMapping("/items")
     public List<Item> list(){
-        List<Item> li = new ArrayList<>();
-        li.add(new Item(1, "Hammer"));
-        li.add(new Item(2, "Screwdriver"));
-        li.add(new Item(3, "Bolt"));
         return li;
     }
 }
