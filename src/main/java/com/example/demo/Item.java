@@ -11,6 +11,10 @@ public class Item {
         this.done = false;
     }
 
+    public Item() {
+        
+    }
+
     public int getId(){
         return id;
     }
